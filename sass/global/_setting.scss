@@ -1,0 +1,116 @@
+@use "sass:math";
+
+////////////////////
+// インナー幅設定
+////////////////////
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1100px;
+// ※キャンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+// ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
+
+
+////////////////////
+// フォント設定
+////////////////////
+
+$font-family-base: 'Noto Sans JP', sans-serif;
+$second-font-family:  'Lato', sans-serif;
+
+$font-size-base: 16px; // ベースフォントサイズ
+$font-weight-base: 400; // ベースフォントウェイト
+$lh: 1.6; // ベース行間
+// ※検証ツールでしっかり反映されているか確認する
+
+body {
+  font-family: $font-family-base;
+}
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black:#333;
+$white:#fff;
+
+// マウスホバー
+$opacity: 0.7; // 透過度
+
+
+////////////////////
+// メディアクエリとブレークポイントの設定
+////////////////////
+
+//ブレイクポイント
+$breakpoints: (
+  sm: 375,
+  md: 767,
+  lg: 1023,
+  inner: strip-unit($inner),
+  xl: 1440,
+);
+
+
+//メディアクエリー
+$mediaquerys: (
+  sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+  inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
+
+// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
+
+
+////////////////////
+// 非表示設定
+////////////////////
+
+//デスクトップのみ表示
+.u-desktop {
+  display: none;
+  @include mq("lg") {
+    display: block;
+  }
+}
+
+//タブレット以下表示
+.u-mobile {
+  @include mq("lg") {
+    display: none;
+  }
+}
+//スマホのみ表示
+.is-sm{
+  display: none;
+  @include mq("sm"){
+    display: block;
+  }
+}
+//pcのみ表示
+.is-pc{
+  display: block;
+  @include mq("md"){
+    display: none;
+  }
+}
