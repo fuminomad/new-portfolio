@@ -8,8 +8,8 @@ $inner: 1100px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 25px;
-$padding-sp: 20px;
+$padding-pc: 40px;
+$padding-sp: 15px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
@@ -17,8 +17,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$font-family-base: 'Noto Sans JP', sans-serif;
-$second-font-family:  'Lato', sans-serif;
+$font-family-base: fot-tsukuardgothic-std, sans-serif;
+$font-family-english:  'Josefin Sans', sans-serif;
 
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
@@ -41,6 +41,11 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black:#333;
 $white:#fff;
+$blue:#C1D9EE;
+$light-blue:#DAE0E3;
+$beige:#F2EEE9;
+$brawn:#C2AA8B;
+$green:#264F63;
 
 // マウスホバー
 $opacity: 0.7; // 透過度

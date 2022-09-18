@@ -1,2 +1,9 @@
 @use "global" as *;
 
+.c-section-title{
+    font-family: $font-family-english;
+    font-size: rem(60);
+    line-height: 1;
+    text-align: center;
+
+}

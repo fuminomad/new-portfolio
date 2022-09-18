@@ -1,1 +1,15 @@
 @use "global" as *;
+
+.p-contact__title{
+position: relative;
+}
+.p-contact__title::after{
+    position: absolute;
+   bottom: rem(-5);
+   left: 50%;
+   transform: translateX(-50%);
+    content: "お問い合わせ";
+    font-family: $font-family-base;
+    font-size: rem(14);
+    letter-spacing: 0.7;
+}

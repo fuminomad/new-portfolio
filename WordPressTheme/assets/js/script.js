@@ -14,19 +14,19 @@ jQuery('a[href^="#"]').click(function() {
 
 // topに戻るボタン
 
-var show = jQuery(".p-mv").offset();
-jQuery('.p-footer__btn').hide();
-jQuery(window).scroll(function() {
-if(jQuery(this).scrollTop() > show.top) {
-jQuery('.p-footer__btn').fadeIn();
-} else {
-jQuery('.p-footer__btn').fadeOut();
-	}
-});
-jQuery('.p-footer__btn').click(function(){
-jQuery('html, body').animate({scrollTop: 0}, 500);
+// var show = jQuery(".p-mv").offset();
+// jQuery('.p-footer__btn').hide();
+// jQuery(window).scroll(function() {
+// if(jQuery(this).scrollTop() > show.top) {
+// jQuery('.p-footer__btn').fadeIn();
+// } else {
+// jQuery('.p-footer__btn').fadeOut();
+// 	}
+// });
+// jQuery('.p-footer__btn').click(function(){
+// jQuery('html, body').animate({scrollTop: 0}, 500);
 
-});
+// });
 
 // スムーススクロール絶対パス
 jQuery(function(jQuery) {
@@ -72,4 +72,38 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 		jQuery('.p-header_hamburger').trigger('click');
 	});
 
-	
+	(function($) {  
+
+		$('.menu ,.gnav').on('click',function(){
+			$('.menu__line').toggleClass('active');
+			$('.p-header__inner').toggleClass('active');
+			$('.p-header-logo').toggleClass('active');
+			$('.p-header').toggleClass('active');
+			$('.gnav').fadeToggle();
+		});
+		
+
+		
+		})(jQuery);
+		jQuery(function($){
+
+			$(function() {
+				$('.slider').slick({
+				  autoplay: true, // 自動再生ON
+				  dots: true, // ドットインジケーターON
+				  centerMode: true, // 両サイドに前後のスライド表示
+				  centerPadding: '0px', // 左右のスライドのpadding
+				  slidesToShow: 4.3, // 一度に表示するスライド数
+				  responsive: [
+					  {
+						  breakpoint: 679, // 678px以下のサイズに適用
+						  settings: {
+							  
+							  centerPadding: '10px', // 左右のスライドのpadding
+					  slidesToShow: 1.65,
+					  },
+					},
+				  ],
+				});
+			  });
+		});

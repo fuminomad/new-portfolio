@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.c-btn-contact-form{
+    display: inline-block;
+    padding: rem(20)rem(133)rem(20)rem(177);
+    background-color:$white;
+    color: $black;
+    font-family: $font-family-english;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    letter-spacing: 0;
+    font-weight: bold; 
+    font-size: rem(20);
+    width: rem(440);
+    @include mq(md){
+    width: rem(278);
+    padding: rem(23)rem(46)rem(21)rem(100);
+    font-size: rem(16);
+        text-align: center;
+        }
+}
+.c-btn-contact-form:hover{
+    opacity: .7;
+}
+.c-btn-contact-form::before{
+    position: absolute;
+    width: rem(28);
+    height: rem(22);
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(135);
+    content: "";
+    background: url(../img/icon-mail-bic.svg)no-repeat center center / contain;
+    transition: all 0.5s;
+    color: $black;
+    
+    @include mq(md){
+        left: rem(60);
+        }
+}
+.c-btn-contact-form:hover::before{
+    opacity: .7;
+}

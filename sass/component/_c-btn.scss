@@ -1,1 +1,88 @@
 @use "global" as *;
+.c-btn{
+    display: inline-block;
+    padding: rem(10)rem(7)rem(9)rem(19);
+    background: $light-blue;
+    color: $black;
+    font-family: $font-family-base;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    letter-spacing: 0.7;
+    font-weight: bold;
+    font-size: rem(14);
+}
+.c-btn::before{
+    position: absolute;
+    width: rem(6);
+    height: rem(12);
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(7);
+    content: "";
+    background: url(../img/Vector.svg)no-repeat center center / contain;
+    transition: all 0.5s;
+}
+.c-btn:hover::before{
+    position: absolute;
+    width: rem(6);
+    height: rem(12);
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(10);
+    content: "";
+    background: url(../img/Vector.svg)no-repeat center center / contain;
+    transition: all 0.5s;
+}
+.c-btn::after{
+    position: absolute;
+    width: 90%;
+    height:rem(2);
+    bottom: rem(6);
+  background-color:$black;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+.c-btn:hover{
+    @extend.c-btn;
+    opacity: 0.7;
+}
+.c-btn:hover::after{
+    position: absolute;
+    width: 20%;
+    height:rem(2);
+    bottom: rem(6);
+    background-color:$black;
+    content: "";
+    left: 15%;
+    
+    transition: all 0.5s;
+}
+
+.c-btn-contact{
+    display: inline-block;
+    padding: rem(11)rem(10)rem(9)rem(36);
+    background-color:$black;
+    color: $white;
+    font-family: $font-family-english;
+    text-decoration: none;
+    position: relative;
+    transition: all 1s;
+    letter-spacing: 0;
+    font-weight: bold; 
+    font-size: rem(15);
+}
+.c-btn-contact::before{
+    position: absolute;
+    width: rem(16);
+    height: rem(13);
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(10);
+    content: "";
+    background: url(../img/icon-mail.svg)no-repeat center center / contain;
+    transition: all 1s;
+    color: $white;
+}
