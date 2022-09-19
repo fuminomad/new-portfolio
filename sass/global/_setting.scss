@@ -119,3 +119,10 @@ $mediaquerys: (
     display: none;
   }
 }
+//タブレット以下表示
+.is-md {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}

@@ -5,7 +5,7 @@ position: relative;
 }
 .p-contact__title::after{
     position: absolute;
-   bottom: rem(-5);
+    bottom: rem(-7);
    left: 50%;
    transform: translateX(-50%);
     content: "お問い合わせ";

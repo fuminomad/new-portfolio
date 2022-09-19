@@ -3,6 +3,10 @@
 padding: rem(150) 0 rem(180);
 position: relative;
 margin-bottom: rem(100);
+@include mq(md){
+    padding: rem(100) 0 rem(80);
+    
+    }
 }
 .p-works::after{
 background: $light-blue;

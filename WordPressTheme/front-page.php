@@ -212,5 +212,105 @@
     </div>
 </div>
     
+<div class="p-flow">
+    <h2 class="c-section-title p-flow__title">Flow</h2>
+    <div class="p-flow__inner">
+     <p class="p-flow__text-top">丁寧なヒアリングを行い、課題解決に向けたWEBサイトを制作いたします。クライアント様の想いを形に致します。</p>
+     <div class="p-flow__cards flow__cards">
+        <div class="p-flow__card">
+            <div class="p-flow-images">
 
+                <div class="p-flow__number">
+                    <figure class="p-flow__number-figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/step-1.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+                <div class="p-flow__img">
+                    <figure class="p-flow__figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow-1.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+            </div>
+                <div class="p-flow__sub-titles">
+                <h3 class="p-flow__sub-title">
+                    ヒアリング・お見積もり
+                </h3>
+                <p class="p-flow__text">
+                制作の目的・課題、ご予算、納期等などをお伺いし、お見積もり（無料）を出させていただきます。
+                </p>
+            </div>
+        </div> 
+        <div class="p-flow__card">
+            <div class="p-flow-images">
+
+                <div class="p-flow__number">
+                    <figure class="p-flow__number-figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/step-2.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+                <div class="p-flow__img">
+                    <figure class="p-flow__figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow-2.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+            </div>
+                <div class="p-flow__sub-titles">
+                <h3 class="p-flow__sub-title">
+                ご契約
+                </h3>
+                <p class="p-flow__text">
+                お見積りの検討がお済になり納得して頂けましたら、ご契約お願い致します。
+                </p>
+            </div>
+        </div> 
+        <div class="p-flow__card">
+            <div class="p-flow-images">
+
+                <div class="p-flow__number">
+                    <figure class="p-flow__number-figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/step-3.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+                <div class="p-flow__img">
+                    <figure class="p-flow__figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow-3.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+            </div>
+                <div class="p-flow__sub-titles">
+                <h3 class="p-flow__sub-title">
+                デザイン案のご提出
+                </h3>
+                <p class="p-flow__text">
+                ヒアリングさせていただいた内容をもとに、目的が達成することを考えた上でデザインさせていただきます。
+それぞれ修正は2回まで無料とします。
+                </p>
+            </div>
+        </div> 
+        <div class="p-flow__card">
+            <div class="p-flow-images">
+
+                <div class="p-flow__number">
+                    <figure class="p-flow__number-figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/step-4.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+                <div class="p-flow__img">
+                    <figure class="p-flow__figure">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow-4.png" alt="step1" loading="lazy" width="200" height="200">
+                    </figure>
+                </div>  
+            </div>
+                <div class="p-flow__sub-titles">
+                <h3 class="p-flow__sub-title">
+                納品
+                </h3>
+                <p class="p-flow__text">
+                デザインが完成いたしましたら、デザインデータの提出をさせていただきます。<br><span>＊コーディングの対応も可能なため、必要な場合はお申し付けください。</span>
+                </p>
+            </div>
+        </div> 
+     </div>
+    </div>
+</div>
 <?php get_footer(); ?>
