@@ -189,6 +189,8 @@ font-family: $font-family-base;
 letter-spacing: 1.4;
 padding-bottom: rem(26);
 font-size: rem(24);
+font-weight: $bold;
+color: $black;
 @include mq(md){
     font-size: rem(16);
     }
