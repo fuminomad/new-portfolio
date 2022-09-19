@@ -53,6 +53,15 @@ font-family: $font-family-base;
      display: inline-block;
     }
 }
+.p-about__text-top{
+padding-bottom: rem(10);
+font-size: rem(16);
+font-family: $font-family-base;
+@include mq(md){
+     text-align: left;
+     display: inline-block;
+    }
+}
 .p-about__img{
 width: 50%;
 padding-top: rem(22);

@@ -6,17 +6,22 @@
         <div class="p-about__texts">
             <p class="p-about__text">
                 私は神奈川県を拠点にフリーランスのWebデザイナーとして活動しております。<br>
-                主に、Webサイトデザインからバナー、LPデザインをメインに制作しております。
+                主に、バナーからWebサイトデザインをメインに制作しております。
             </p>
-            <p class="p-about__text">
-                「 こちらの要望だけでなく、デザイナー目線で提案してほしい 」<br>
-                「綺麗なだけでなく、ユーザーが使いやすいデザインにしてほしい」
-            </p>
-            <p class="p-about__text">
+            <p class="p-about__text-top">
                 お客様からこんな声を聞きます。
             </p>
+            <p class="p-about__text-top">
+                「 こちらの要望だけでなく、デザイナー目線で提案してほしい 」
+                
+            </p>
             <p class="p-about__text">
-                「だからこそ、「より良くなるために 」どうしたら良いかを考え抜き、
+                
+                「綺麗なだけでなく、ユーザーが使いやすいデザインにしてほしい」
+            </p>
+           
+            <p class="p-about__text">
+                だからこそ、「より良くなるために 」どうしたら良いかを考え抜き、
                 提案型で痒いところに手が届くようなデザインパートナーでいられるよう心がけております。
             </p>
         </div>
@@ -90,9 +95,29 @@
                         <figure class="wd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-1.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
                         </figure>
-                    </div>
+                   </div>
                     <div class="wd-card__btn">
-                        <a href="" class="c-btn">View More</a>
+                        <!-- ここからsite-1 -->
+                        <div class="js-open-modal p-modal__button" data-target=".js-modal">
+    <div class="wd-card__btn">
+                        <div class="c-btn">View More</div>
+                    </div>
+    </div>
+<div class="p-modal l-modal js-modal">
+ <div class="p-modal__wrap">
+  <div class="p-modal__inner">
+   <div class="p-modal__box">
+    <div class="site__img">
+        <div class="site__figure">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/site-1.jpg" alt="Webサイトデザイン">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-modal__bg js-close-modal js-modal" data-target=".js-modal"></div>
+                        <!-- ここまでsite-1 -->
                     </div>
                 </div>
                 <div class="wd-card">
@@ -102,7 +127,27 @@
                         </figure>
                     </div>
                     <div class="wd-card__btn">
-                        <a href="" class="c-btn">View More</a>
+                        <!-- ここからsite-2 -->
+                        <div class="js-open-modal-2 p-modal__button" data-target=".js-modal-2">
+    <div class="wd-card__btn">
+                        <div class="c-btn">View More</div>
+                    </div>
+    </div>
+<div class="p-modal l-modal js-modal-2">
+ <div class="p-modal__wrap">
+  <div class="p-modal__inner">
+   <div class="p-modal__box">
+    <div class="site__img">
+        <div class="site__figure">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/site-2.jpg" alt="Webサイトデザイン">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-modal__bg js-close-modal-2 js-modal-2" data-target=".js-modal-2"></div>
+                        <!-- ここまでsite-2 -->
                     </div>
                 </div>
             </div>
@@ -166,4 +211,6 @@
         </div>
     </div>
 </div>
+    
+
 <?php get_footer(); ?>

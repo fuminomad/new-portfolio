@@ -5,5 +5,8 @@
     font-size: rem(60);
     line-height: 1;
     text-align: center;
-
+@include mq(md){
+    font-size: rem(50);
+    padding-bottom: rem(3);
+    }
 }

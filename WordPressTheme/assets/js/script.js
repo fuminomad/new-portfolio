@@ -107,3 +107,32 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 				});
 			  });
 		});
+// 　　　　　　モーダル
+jQuery(function($){
+	$('.js-close-modal').on('click', function (e) {
+		$('body').css('overflow-y', 'auto')
+		var target = $(this).data('target')
+		$(target).fadeOut(300)
+	  })
+	  
+	  $('.js-open-modal').on('click', function (e) {
+		$('body').css('overflow-y', 'hidden')
+		var target = $(this).data('target')
+		$(target).fadeIn(300)
+	  })
+	
+});
+
+jQuery(function($){
+	$('.js-close-modal-2').on('click', function (e) {
+		$('body').css('overflow-y', 'auto')
+		var target = $(this).data('target')
+		$(target).fadeOut(300)
+	  })
+	  
+	  $('.js-open-modal-2').on('click', function (e) {
+		$('body').css('overflow-y', 'hidden')
+		var target = $(this).data('target')
+		$(target).fadeIn(300)
+	  })
+});
