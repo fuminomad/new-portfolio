@@ -1,4 +1,4 @@
-# 【DartSass】 wordpress CodeUps課題用Gulp環境（SPファースト）
+# 【DartSass】 wordpress Gulp環境（PCファースト）
 
 ## 環境
 - Gulpが使える環境が前提（4系）
