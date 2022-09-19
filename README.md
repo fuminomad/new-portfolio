@@ -1,4 +1,4 @@
-# 【DartSass】 wordpress CodeUps課題用Gulp環境（SPファースト）
+# 【DartSass】 wordpress Gulp環境（PCファースト）
 
 ## 環境
 - Gulpが使える環境が前提（4系）
@@ -20,10 +20,5 @@
 - pcファーストが前提の仕様です。
 - rem記述を前提としています。
 - ルートフォントをvwで設定していることからPCサイズのレイアウトをタブレットで表示させることが出来ます（remで書いた場合のみ）。
-# gulp-dartsass-pc-sp
-# wp-gulp-dartsass-sp-pc
-# wp-gulp-dartsass-sp-pc
-# new-roots
-# wp-gartsass-gulp-pc-sp
 # new-wp-dartsass-gulp-pc-sp-main
 # new-portfolio
