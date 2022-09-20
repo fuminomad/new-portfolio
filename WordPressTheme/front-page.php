@@ -317,26 +317,26 @@
             </div>
             <div class="p-accordion__item">
                 <div class="p-accordion__title js-accordion-title open">
-                バナーのみお願いしたいのですが、可能ですか？
+                    バナーのみお願いしたいのですが、可能ですか？
                 </div>
                 <div class="p-accordion__content">
-                はい、可能です。バナー1枚から承っておりますので、またお気軽にご連絡ください。
+                    はい、可能です。バナー1枚から承っておりますので、またお気軽にご連絡ください。
                 </div>
             </div>
             <div class="p-accordion__item">
                 <div class="p-accordion__title js-accordion-title open">
-                クライアントとの打ち合わせに同席してもらえますか？
+                    クライアントとの打ち合わせに同席してもらえますか？
                 </div>
                 <div class="p-accordion__content">
-                はい、可能です。お打ち合わせに同席させていただき、デザインのヒアリングから対応させていただくことも可能です。
+                    はい、可能です。お打ち合わせに同席させていただき、デザインのヒアリングから対応させていただくことも可能です。
                 </div>
             </div>
             <div class="p-accordion__item">
                 <div class="p-accordion__title js-accordion-title open">
-                お見積もりだけでも大丈夫でしょうか？
+                    お見積もりだけでも大丈夫でしょうか？
                 </div>
                 <div class="p-accordion__content">
-                はい、大丈夫です。お気軽にご相談ください。
+                    はい、大丈夫です。お気軽にご相談ください。
                 </div>
             </div>
         </div>
@@ -344,14 +344,23 @@
 </div>
 <div class="p-contact">
     <div class="p-contact__inner">
-        <div class="p-contact__texts">
-           <div class="p-contact__titles">
-           <h2 class="c-section-title p-contact__title">Contact</h2>
-           </div>
+        <div class="p-contact__text-wrapper">
+            <div class="p-contact__titles">
+                <h2 class="p-contact__title">Contact</h2>
+            </div>
+            <p class="p-contact__text">
+                制作のご依頼・ご相談などお気軽にお問い合わせくださいませ。
+            </p>
         </div>
-        <div class="p-contact__images">
-
-        </div>
+        <a href="" class="p-contact__messages">
+            <p class="p-contact__message">
+                ご質問・ご相談はお問い合わせフォームからお送りください。
+                <br>3営業日以内にご返信致します。
+            </p>
+            <div class="p-contact__btn">
+                <div class="c-btn-contact-form">Contact Form</div>
+            </div>
+        </a>
     </div>
 </div>
 <?php get_footer(); ?>
