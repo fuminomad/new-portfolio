@@ -1,6 +1,22 @@
 <?php get_header(); ?>
-<div class="p-about l-about" id="about">
-    <h2 class="c-section-title p-about__title">About</h2>
+<div class="p-mv">
+    <div class="p-mv__inner">
+        <div class="p-mv__titles">
+            <h1 class="p-mv__title">
+                <figure class="p-mv__title-img">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-text.png" alt="課題解決につながる提案方デザイナー" width="716" height="316">
+                </figure>
+            </h1>
+        </div>
+        <div class="p-mv__img">
+            <figure class="p-mv_figure">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv.jpg" alt="デザイナーの画像" width="1561" height="928">
+            </figure>
+        </div>
+    </div>
+</div>
+<div class="p-about l-about">
+    <h2 class="c-section-title p-about__title" id="about">About</h2>
     <div class="p-about__inner">
         <div class="p-about__texts">
             <p class="p-about__text">
@@ -29,7 +45,7 @@
     </div>
 </div>
 <div class="p-valuable">
-    <h2 class="c-section-title p-valuable__title">Valuable</h2>
+    <h2 class="c-section-title p-valuable__title" id="valuable">Valuable</h2>
     <div class="p-valuable__inner">
         <div class="p-valuable__cards">
             <div class="p-valuable__card card">
@@ -79,7 +95,7 @@
     </div>
 </div>
 <div class="p-works">
-    <h2 class="c-section-title p-works__title">Works</h2>
+    <h2 class="c-section-title p-works__title" id="works">Works</h2>
     <div class="p-works__inner">
         <div class="p-works__wrappers-1">
             <h3 class="p-works__sub-title p-works__sub-title-1">Web Design</h3>
@@ -206,7 +222,7 @@
     </div>
 </div>
 <div class="p-flow">
-    <h2 class="c-section-title p-flow__title">Flow</h2>
+    <h2 class="c-section-title p-flow__title" id="flow">Flow</h2>
     <div class="p-flow__inner">
         <p class="p-flow__text-top">丁寧なヒアリングを行い、課題解決に向けたWEBサイトを制作いたします。クライアント様の想いを形に致します。</p>
         <div class="p-flow__cards flow__cards">
@@ -304,7 +320,7 @@
 </div>
 <div class="p-qa">
     <div class="p-qa__inner">
-        <h2 class="c-section-title p-qa__title">Q&A</h2>
+        <h2 class="c-section-title p-qa__title" id="qa">Q&A</h2>
         <div class="p-accordion__container">
             <div class="p-accordion__item">
                 <div class="p-accordion__title js-accordion-title open">
@@ -346,15 +362,15 @@
     <div class="p-contact__inner">
         <div class="p-contact__text-wrapper">
             <div class="p-contact__titles">
-                <h2 class="p-contact__title">Contact</h2>
+                <h2 class="p-contact__title" id="contact">Contact</h2>
             </div>
             <p class="p-contact__text">
-                制作のご依頼・ご相談などお気軽にお問い合わせくださいませ。
+            <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span> 
             </p>
         </div>
         <a href="" class="p-contact__messages">
             <p class="p-contact__message">
-                ご質問・ご相談はお問い合わせフォームからお送りください。
+               <span class="new-line">ご質問・ご相談はお問い合わせ</span> <span class="new-line">フォーム</span><span class="new-line">からお送りください。</span>  
                 <br>3営業日以内にご返信致します。
             </p>
             <div class="p-contact__btn">

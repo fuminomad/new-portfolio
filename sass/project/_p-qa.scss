@@ -26,9 +26,9 @@ position: relative;
     height:100%;
     height: rem(900);
     padding-top: rem(140);
-    margin-bottom: rem(100);
+    // margin-bottom: rem(100);
     @include mq(md){
-      margin-bottom: rem(60);
+      // margin-bottom: rem(60);
     }
   }
 .p-qa__inner{

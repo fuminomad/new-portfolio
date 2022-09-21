@@ -40,6 +40,7 @@ $bold: 700;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black:#333;
+$black2:#252525;
 $white:#fff;
 $blue:#C1D9EE;
 $light-blue:#DAE0E3;
@@ -125,4 +126,14 @@ $mediaquerys: (
   @include mq("md") {
     display: block;
   }
+}
+// 改行コントロール
+.new-line{
+  display: inline-block;
+}
+.new-line-md{
+  @include mq(md){
+    display: inline-block;
+    
+    }
 }

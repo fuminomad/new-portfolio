@@ -42,12 +42,12 @@
 </head>
 <?php
 $home = esc_url(home_url('/'));
-$about = esc_url(home_url('#about'));
-$valuable = esc_url(home_url('#valuable'));
-$works = esc_url(home_url('#works'));
-$flow = esc_url(home_url('#flow '));
-$qa = esc_url(home_url('#qa'));
-$contact = esc_url(home_url('#contact'));
+$about = esc_url(home_url('/#about'));
+$valuable = esc_url(home_url('/#valuable'));
+$works = esc_url(home_url('/#works'));
+$flow = esc_url(home_url('/#flow'));
+$qa = esc_url(home_url('/#qa'));
+$contact = esc_url(home_url('/#contact'));
 ?>
 
 <body <?php body_class(); ?>>
@@ -73,7 +73,7 @@ $contact = esc_url(home_url('#contact'));
               <a href="<?php echo $qa ?>">よくある質問</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $qa ?>" class="c-btn-contact">Contact</a>
+              <a href="<?php echo $contact ?>" class="c-btn-contact">Contact</a>
           </li>
        </ul>  
       </nav> 
