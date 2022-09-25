@@ -3,11 +3,66 @@
 .p-mv{
 padding-top: rem(44);
 padding-bottom: rem(116);
+position: relative;
+@include mq(md){
+    padding-bottom: rem(80);
+    }
+@media screen and (max-width: 414px){
+padding-bottom: rem(40);
+
+}
+}
+.p-mv::after{
+position: absolute;
+width: 59.84%;
+height: 54%;
+top: 46%;
+left: 0;
+content: "";
+background-color: $light-blue;
+z-index: -2;
+@include mq(md){
+    width: 100%;
+    }
+}
+.p-mv:before{
+    z-index: 2;
+    position: absolute;
+    right: 3%;
+    content: "";
+    background: url(../img/scroll-down.png)no-repeat center center / contain;
+    width: rem(15);
+    height: rem(152);
+    bottom: 18%;
+    
+    // @include mq(xl){
+    //     width: rem(25);
+    //     height: rem(472);
+        
+    //     bottom: 5%;
+    //     }
+    @include mq(md){
+        bottom: 18%;
+        right: 2%;
+        width: rem(10);
+        
+        height: 100px;
+        
+        }
+        @media screen and (max-width: 680px) {
+          bottom: 24%;
+
+        }
+    @include mq(sm){
+        bottom: 7%;
+        
+        }
 }
 .p-mv__inner{
 width: 100%;
 max-width: rem(1920);
 position: relative;
+overflow: hidden;
 }
 .p-mv__titles{
     position: absolute;
@@ -17,17 +72,26 @@ position: relative;
     left: 6%;
     content: "";
     z-index: 2;
-    
-}
+    @media screen and (max-width: 414px){
+        top: 53%; 
+        left: 2%;
+      }
+    }
 .p-mv__title{
     height: auto;
     width: 37.08%;
+    @media screen and (max-width: 414px){
+        width: 90.9%;
+      }
 }
 .p-mv__title-img{
     position: relative;
     width: 100%;
     height: 0;
     padding-top: 43.25% ;
+    @include mq(sm){
+        padding-top: 45.2%;
+        }
 }
 .p-mv__title-img img{
     position: absolute;
@@ -36,19 +100,23 @@ position: relative;
     width: 100%;
     height: 100%;
 }
-.p-mv__img{
- margin-left: auto;
- width: 81.3%;
+
+
+.p-mv__pictures{
+    margin-left: auto;
+    width: 81.3020vw;
+   height: 48.3333vw;
+  
+@media screen and (max-width: 414px){
+           width: 92vw;
+           height: 113.6vw;
+
+
+    }
 }
-.p-mv_figure{
-width: 81.3020vw;
-height: 48.3333vw;
-position: relative;
-}
-.p-mv_figure img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.p-mv__picture{
+height: auto;
+width: 100%;
+
+ 
 }

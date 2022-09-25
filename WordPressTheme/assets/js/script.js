@@ -39,7 +39,7 @@ jQuery(function(jQuery) {
 		var target = jQuery(href == '#' || href == '' ? 'html' : href);
 		if( target.size() < 1 ) return true;
 		var position = jQuery(target).offset().top - header;
-		jQuery('html, body').animate({scrollTop:position}, speed, 'swing');
+		jQuery('html, body').animate({scrollTop:position}, speed, 'linear');
 		jQuery('.p-header_nav').removeClass('open');
 		return false;
 	});
@@ -59,7 +59,7 @@ jQuery(function(jQuery) {
 
 
 // ドロワーメニュー
-jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e){
+jQuery('.p-header_hamburger , .p-header_nav-background' ).on('click' , function(e){
 	e.preventDefault();
 	
 	jQuery('.p-header_nav').toggleClass('open');
@@ -74,12 +74,13 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 
 	(function($) {  
 
-		$('.menu ,.gnav').on('click',function(){
+		$('.menu ,.gnav, .gnav__menu__item a').on('click',function(){
 			$('.menu__line').toggleClass('active');
 			$('.p-header__inner').toggleClass('active');
 			$('.p-header-logo').toggleClass('active');
 			$('.p-header').toggleClass('active');
 			$('.gnav').fadeToggle();
+			$('.p-header_nav-background').removeClass('open');
 		});
 		
 
@@ -96,18 +97,26 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 				  slidesToShow: 4.3, // 一度に表示するスライド数
 				  responsive: [
 					  {
-						  breakpoint: 679, // 678px以下のサイズに適用
+						  breakpoint: 769, // 768px以下のサイズに適用
 						  settings: {
 							  
 							  centerPadding: '10px', // 左右のスライドのpadding
 					  slidesToShow: 1.65,
 					  },
 					},
+					  {
+						  breakpoint: 376, // 375px以下のサイズに適用
+						  settings: {
+							  
+							  centerPadding: '10px', // 左右のスライドのpadding
+					  slidesToShow: 1,
+					  },
+					},
 				  ],
 				});
 			  });
 		});
-// 　　　　　　モーダル
+// モーダル
 jQuery(function($){
 	$('.js-close-modal').on('click', function (e) {
 		$('body').css('overflow-y', 'auto')

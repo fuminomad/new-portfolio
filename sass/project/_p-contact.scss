@@ -96,6 +96,11 @@ padding-top: rem(50);
         padding-top: rem(20);
         top: 80%;
         margin-top: rem(30);
+        padding: rem(50) 0;
+        background: url(../img/contact-sp.jpg)no-repeat center center / cover;
+    }
+    @include mq(sm){
+        padding-bottom: rem(50);
         }
 }
 .p-contact__messages:hover .c-btn-contact-form{

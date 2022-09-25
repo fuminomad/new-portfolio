@@ -26,9 +26,13 @@ position: relative;
     height:100%;
     height: rem(900);
     padding-top: rem(140);
-    // margin-bottom: rem(100);
     @include mq(md){
+      // margin-bottom: rem(100);
       // margin-bottom: rem(60);
+    }
+    @media screen and  (max-width: 405px){
+    margin-bottom: rem(100);
+
     }
   }
 .p-qa__inner{
@@ -55,6 +59,7 @@ position: relative;
 }
   @media screen and(max-width: 405px){
    height: 104%;
+   top: 2.6%;
 }
 }
 .p-accordion__container{
@@ -71,7 +76,7 @@ position: relative;
     
      margin: rem(60) auto 0;
      @include mq(md){
-       max-width: 80%;
+       max-width: 90%;
      }
      z-index: 2;
  }

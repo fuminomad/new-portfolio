@@ -434,10 +434,6 @@ select {
   }
 }
 
-.p-header__inner.active {
-  display: none;
-}
-
 .p-header-logo {
   width: 222px;
   height: 33px;
@@ -851,7 +847,7 @@ select {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -878,10 +874,20 @@ select {
   overflow: scroll;
   width: 100%;
 }
+@media screen and (max-width: 375px) {
+  .p-modal__wrap {
+    max-height: 500px;
+  }
+}
 
 .p-modal__box {
   margin: 100px 0;
   margin: 6.25rem 0;
+}
+@media screen and (max-width: 375px) {
+  .p-modal__box {
+    margin: 0;
+  }
 }
 
 .gnav {
@@ -937,21 +943,38 @@ select {
   padding-top: 5rem;
   padding-bottom: 80px;
   padding-bottom: 5rem;
-  width: 100%;
-  max-width: 1440px;
-  max-width: 90rem;
-  margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  position: relative;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .p-about {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
+.p-about::after {
+  position: absolute;
+  width: 59.84%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #DAE0E3;
+  z-index: -2;
+}
+@media screen and (max-width: 767px) {
+  .p-about::after {
+    width: 100%;
+  }
+}
+
 .p-about__inner {
+  width: 100%;
+  max-width: 1280px;
+  max-width: 80rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,6 +1081,7 @@ select {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 50px;
 }
 
 .p-contact__title {
@@ -1179,6 +1203,13 @@ select {
     padding-top: 1.25rem;
     top: 80%;
     margin-top: 1.875rem;
+    padding: 3.125rem 0;
+    background: url(../img/contact-sp.jpg) no-repeat center center/cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-contact__messages {
+    padding-bottom: 3.125rem;
   }
 }
 
@@ -1264,6 +1295,7 @@ select {
 }
 @media screen and (max-width: 767px) {
   .p-flow::before {
+    border-radius: 0px 50px 0px 0px;
     width: 100%;
   }
 }
@@ -1542,6 +1574,64 @@ select {
   padding-top: 2.75rem;
   padding-bottom: 116px;
   padding-bottom: 7.25rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .p-mv {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .p-mv {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.p-mv::after {
+  position: absolute;
+  width: 59.84%;
+  height: 54%;
+  top: 46%;
+  left: 0;
+  content: "";
+  background-color: #DAE0E3;
+  z-index: -2;
+}
+@media screen and (max-width: 767px) {
+  .p-mv::after {
+    width: 100%;
+  }
+}
+
+.p-mv:before {
+  z-index: 2;
+  position: absolute;
+  right: 3%;
+  content: "";
+  background: url(../img/scroll-down.png) no-repeat center center/contain;
+  width: 15px;
+  width: 0.9375rem;
+  height: 152px;
+  height: 9.5rem;
+  bottom: 18%;
+}
+@media screen and (max-width: 767px) {
+  .p-mv:before {
+    bottom: 18%;
+    right: 2%;
+    width: 0.625rem;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .p-mv:before {
+    bottom: 24%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-mv:before {
+    bottom: 7%;
+  }
 }
 
 .p-mv__inner {
@@ -1549,6 +1639,7 @@ select {
   max-width: 1920px;
   max-width: 120rem;
   position: relative;
+  overflow: hidden;
 }
 
 .p-mv__titles {
@@ -1560,10 +1651,21 @@ select {
   content: "";
   z-index: 2;
 }
+@media screen and (max-width: 414px) {
+  .p-mv__titles {
+    top: 53%;
+    left: 2%;
+  }
+}
 
 .p-mv__title {
   height: auto;
   width: 37.08%;
+}
+@media screen and (max-width: 414px) {
+  .p-mv__title {
+    width: 90.9%;
+  }
 }
 
 .p-mv__title-img {
@@ -1571,6 +1673,11 @@ select {
   width: 100%;
   height: 0;
   padding-top: 43.25%;
+}
+@media screen and (max-width: 375px) {
+  .p-mv__title-img {
+    padding-top: 45.2%;
+  }
 }
 
 .p-mv__title-img img {
@@ -1581,23 +1688,21 @@ select {
   height: 100%;
 }
 
-.p-mv__img {
+.p-mv__pictures {
   margin-left: auto;
-  width: 81.3%;
-}
-
-.p-mv_figure {
   width: 81.302vw;
   height: 48.3333vw;
-  position: relative;
+}
+@media screen and (max-width: 414px) {
+  .p-mv__pictures {
+    width: 92vw;
+    height: 113.6vw;
+  }
 }
 
-.p-mv_figure img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.p-mv__picture {
+  height: auto;
   width: 100%;
-  height: 100%;
 }
 
 .p-qa__title {
@@ -1629,6 +1734,12 @@ select {
   padding-top: 140px;
   padding-top: 8.75rem;
 }
+@media screen and (max-width: 405px) {
+  .p-qa {
+    margin-bottom: 6.25rem;
+  }
+}
+
 .p-qa__inner {
   position: relative;
   max-width: 1920px;
@@ -1661,6 +1772,7 @@ select {
 @media screen and (max-width: 405px) {
   .p-qa__inner::after {
     height: 104%;
+    top: 2.6%;
   }
 }
 
@@ -1682,7 +1794,7 @@ select {
 }
 @media screen and (max-width: 767px) {
   .p-accordion__container {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -1782,10 +1894,12 @@ select {
   width: 100%;
   max-width: 1920px;
   max-width: 120rem;
-  padding: 80px 0 100px;
+  padding: 120px 0 100px;
+  padding: 7.5rem 0 6.25rem;
 }
 @media screen and (max-width: 767px) {
   .p-valuable {
+    padding-top: 6.25rem;
     padding-bottom: 1.875rem;
   }
 }
@@ -1982,6 +2096,11 @@ select {
     padding-left: 10%;
   }
 }
+@media screen and (max-width: 375px) {
+  .p-valuable__text {
+    padding-bottom: 0.625rem;
+  }
+}
 
 .card:nth-child(2) .p-valuable__texts {
   right: -8%;
@@ -2009,9 +2128,14 @@ select {
 @media screen and (max-width: 767px) {
   .card:nth-child(2) .p-valuable__texts .p-valuable__text {
     max-height: 21.25rem;
-    border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 50px;
     padding-right: 10%;
     padding-left: 10%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card:nth-child(2) .p-valuable__texts .p-valuable__text {
+    padding-bottom: 0.625rem;
   }
 }
 
@@ -2070,9 +2194,9 @@ select {
           transform: translateX(-50%);
   content: "私が大切にしている３のこと";
   font-family: fot-tsukuardgothic-std, sans-serif;
-  font-size: 14px;
-  font-size: 0.875rem;
-  width: 150%;
+  font-size: 12px;
+  font-size: 0.75rem;
+  width: 100%;
 }
 
 .p-works {
@@ -2099,6 +2223,11 @@ select {
   z-index: -1;
   content: "";
   border-radius: 50px 0px 0px 0px;
+}
+@media screen and (max-width: 767px) {
+  .p-works::after {
+    width: 100%;
+  }
 }
 
 .p-works__wrappers-1 {

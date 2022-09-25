@@ -19,6 +19,9 @@ right: 0;
 z-index: -1;
 content: "";
 border-radius: 50px 0px 0px 0px;
+@include mq(md){
+  width: 100%;
+  }
 
 }
 // .p-works__inner{

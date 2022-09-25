@@ -4,17 +4,24 @@
         <div class="p-mv__titles">
             <h1 class="p-mv__title">
                 <figure class="p-mv__title-img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-text.png" alt="課題解決につながる提案方デザイナー" width="716" height="316">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-text.png" alt="課題解決につながる提案方デザイナー" width="716" height="316">
                 </figure>
             </h1>
         </div>
-        <div class="p-mv__img">
-            <figure class="p-mv_figure">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv.jpg" alt="デザイナーの画像" width="1561" height="928">
-            </figure>
+
+        <div class="p-mv__pictures">
+            <picture class="p-mv__picture">
+                <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/mv.jpg" alt="デザイナーの画像" media="(min-width: 415px)" /><!-- 幅376px以上なら表示 -->
+
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-sp.jpg" alt="デザイナーの画像">
+                <picture>
+
         </div>
+
     </div>
 </div>
+
+
 <div class="p-about l-about">
     <h2 class="c-section-title p-about__title" id="about">About</h2>
     <div class="p-about__inner">
@@ -101,14 +108,14 @@
             <h3 class="p-works__sub-title p-works__sub-title-1">Web Design</h3>
             <div class="p-works__wrapper wd-cards">
                 <div class="wd-card">
+                    <div class="wd-card__btn">
+                        <!-- ここからsite-1 -->
+                        <div class="js-open-modal p-modal__button" data-target=".js-modal">
                     <div class="wd-card__img">
                         <figure class="wd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-1.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
                         </figure>
                     </div>
-                    <div class="wd-card__btn">
-                        <!-- ここからsite-1 -->
-                        <div class="js-open-modal p-modal__button" data-target=".js-modal">
                             <div class="wd-card__btn">
                                 <div class="c-btn">View More</div>
                             </div>
@@ -131,14 +138,14 @@
                     </div>
                 </div>
                 <div class="wd-card">
+                    <div class="wd-card__btn">
+                        <!-- ここからsite-2 -->
+                        <div class="js-open-modal-2 p-modal__button" data-target=".js-modal-2">
                     <div class="wd-card__img">
                         <figure class="wd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-2.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
                         </figure>
                     </div>
-                    <div class="wd-card__btn">
-                        <!-- ここからsite-2 -->
-                        <div class="js-open-modal-2 p-modal__button" data-target=".js-modal-2">
                             <div class="wd-card__btn">
                                 <div class="c-btn">View More</div>
                             </div>
@@ -197,26 +204,26 @@
         <div class="p-works__wrappers-3">
             <h3 class="p-works__sub-title p-works__sub-title-3">Coding</h3>
             <div class="p-works__wrapper cd-cards">
-                <div class="cd-card">
+                <a href="//hairsalon-decision.com/" class="cd-card">
                     <div class="cd-card__img">
                         <figure class="cd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/coding-1.jpg" alt="コーディング" loading="lazy" width="657" height="490">
                         </figure>
                     </div>
                     <div class="cd-card__btn">
-                        <a href="//hairsalon-decision.com/" class="c-btn">View Site</a>
+                        <div class="c-btn">View Site</div>
                     </div>
-                </div>
-                <div class="cd-card">
+                </a>
+                <a href="//sumiya-mariko-ballet.com/"  class="cd-card">
                     <div class="cd-card__img">
                         <figure class="cd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/coding-2.jpg" alt="コーディング" loading="lazy" width="657" height="490">
                         </figure>
                     </div>
                     <div class="cd-card__btn">
-                        <a href="//sumiya-mariko-ballet.com/" class="c-btn">View Site</a>
+                        <div class="c-btn">View Site</div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -365,12 +372,12 @@
                 <h2 class="p-contact__title" id="contact">Contact</h2>
             </div>
             <p class="p-contact__text">
-            <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span> 
+                <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span>
             </p>
         </div>
         <a href="" class="p-contact__messages">
             <p class="p-contact__message">
-               <span class="new-line">ご質問・ご相談はお問い合わせ</span> <span class="new-line">フォーム</span><span class="new-line">からお送りください。</span>  
+                <span class="new-line">ご質問・ご相談はお問い合わせ</span> <span class="new-line">フォーム</span><span class="new-line">からお送りください。</span>
                 <br>3営業日以内にご返信致します。
             </p>
             <div class="p-contact__btn">

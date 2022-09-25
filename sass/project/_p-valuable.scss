@@ -2,8 +2,9 @@
 .p-valuable{
 width: 100%;
 max-width: rem(1920);
-padding: 80px 0 100px;
+padding: rem(120) 0 rem(100);
 @include mq(md){
+    padding-top: rem(100);
     padding-bottom: rem(30);
     }
 }
@@ -153,6 +154,9 @@ position: relative;
      padding-right: 10%;
      padding-left: 10%; 
        }
+       @include mq(sm){
+           padding-bottom: rem(10);
+           }
 }
 .card:nth-child(2) .p-valuable__texts {
     right: -8%;
@@ -171,10 +175,15 @@ max-height: rem(350);
 }
 @include mq(md){
     max-height: rem(340);
-    border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 50px;
     padding-right: 10%;
     padding-left: 10%;
     }
+    @include mq(sm){
+       padding-bottom: rem(10); 
+
+       
+        }
 }
 .p-valuable__text-top{
     font-family: $font-family-english;
@@ -206,7 +215,9 @@ padding-bottom: rem(30);
     }
 }
 .p-valuable__title{
-position: relative;
+    position: relative;
+    
+
 }
 .p-valuable__title::after{
     position: absolute;
@@ -215,6 +226,6 @@ position: relative;
    transform: translateX(-50%);
     content: "私が大切にしている３のこと";
     font-family: $font-family-base;
-    font-size: rem(14);
-    width: 150%;
+    font-size: rem(12);
+    width: 100%;
 }

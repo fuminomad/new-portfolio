@@ -88,7 +88,7 @@ $contact = esc_url(home_url('/#contact'));
         <div class="gnav__wrap">
             <ul class="gnav__menu">
                 <li class="gnav__menu__item"><a href="<?php echo $about ?>">Web-Rootsについて</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $valuable ?>">私が大切にしていること</a></li>
+                <li class="gnav__menu__item"><a href="<?php echo $valuable ?>">大切にしていること</a></li>
                 <li class="gnav__menu__item"><a href="<?php echo $works ?>">制作実績</a></li>
                 <li class="gnav__menu__item"><a href="<?php echo $flow  ?>">制作の流れ</a></li>
                 <li class="gnav__menu__item"><a href="<?php echo $qa ?>">よくある質問</a></li>
