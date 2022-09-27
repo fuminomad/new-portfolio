@@ -1,5 +1,5 @@
 @use "global" as *;
-.gnav{
+.gnav {
     background: $black;
     display: none;
     height: 100%;
@@ -7,32 +7,29 @@
     width: 100%;
     z-index: 10000;
     top: 0;
-    
 }
-
-.gnav__wrap{
-    align-items:center;
+.gnav__wrap {
+    align-items: center;
     display: flex;
     height: 100%;
     justify-content: center;
     position: absolute;
     width: 100%;
 }
-.gnav__menu{
-text-align: center;
+.gnav__menu {
+    text-align: center;
 }
-.gnav__menu__item{
+.gnav__menu__item {
     margin: 40px 0;
-    
 }
-.gnav__menu__item a{
+.gnav__menu__item a {
     color: $white;
     font-size: rem(24);
     font-weight: bold;
     padding: 40px;
     text-decoration: none;
-    transition: .5s;
+    transition: 0.5s;
 }
-.gnav__menu__item a:hover{
+.gnav__menu__item a:hover {
     color: #666;
 }

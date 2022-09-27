@@ -1,49 +1,45 @@
 @use "global" as *;
-
-.p-qa__title{
-position: relative;
-
+.p-qa__title {
+  position: relative;
 }
-.p-qa__title::after{
-    position: absolute;
-    bottom: rem(-7);
-   left: 50%;
-   transform: translateX(-50%);
-    content: "よくある質問";
-    font-family: $font-family-base;
-    font-size: rem(14);
-    letter-spacing: 0.7;
+.p-qa__title::after {
+  position: absolute;
+  bottom: rem(-7);
+  left: 50%;
+  transform: translateX(-50%);
+  content: "よくある質問";
+  font-family: $font-family-base;
+  font-size: rem(14);
+  letter-spacing: 0.7;
 }
 // ここから
-
-.p-qa{
+.p-qa {
   z-index: -2;
- 
-  margin-left: auto;
-    margin-right: auto;
-    
-    width: 100%;
-    height:100%;
-    height: rem(900);
-    padding-top: rem(120);
-    @include mq(md){
-      // margin-bottom: rem(100);
-      // margin-bottom: rem(60);
-    }
-    @media screen and  (max-width: 405px){
-    margin-bottom: rem(100);
 
-    }
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  height: 100%;
+  height: rem(900);
+  padding-top: rem(120);
+  @include mq(md) {
+    // margin-bottom: rem(100);
+    // margin-bottom: rem(60);
   }
-.p-qa__inner{
+  @media screen and (max-width: 405px) {
+    margin-bottom: rem(100);
+  }
+}
+.p-qa__inner {
   position: relative;
   max-width: 1920px;
   width: 100%;
   height: 100%;
   padding-bottom: rem(555);
 }
-.p-qa__inner::after{
-  background: url(../img/qa-bg.jpg)no-repeat center center / cover;
+.p-qa__inner::after {
+  background: url(../img/qa-bg.jpg) no-repeat center center / cover;
   position: absolute;
   width: 100%;
   height: 85%;
@@ -51,121 +47,101 @@ position: relative;
   left: 0;
   content: "";
   z-index: -1;
-  @media screen and(max-width: 590px){
-   height: 90%;
+  @media screen and(max-width: 590px) {
+    height: 90%;
+  }
+  @media screen and(max-width: 500px) {
+    height: 95%;
+  }
+  @media screen and(max-width: 405px) {
+    height: 104%;
+    top: 2.6%;
+  }
 }
-  @media screen and(max-width: 500px){
-   height: 95%;
-}
-  @media screen and(max-width: 405px){
-   height: 104%;
-   top: 2.6%;
-}
-}
-.p-accordion__container{
-    // top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: inherit;
-    height: 0;
-    width: 52%;
-    position: absolute;
-     margin-top: 30px;
-     width: rem(900);
-     max-width: 52%;
-    
-     margin: rem(60) auto 0;
-     @include mq(md){
-       max-width: 90%;
-     }
-     z-index: 2;
- }
+.p-accordion__container {
+  left: 50%;
+  transform: translateX(-50%);
+  height: inherit;
+  height: 0;
+  width: 52%;
+  position: absolute;
+  margin-top: 30px;
+  width: rem(900);
+  max-width: 52%;
 
-  .p-accordion__title {
-    color: $black;
-    cursor: pointer;
-    font-size: rem(16);
-    font-weight: bold;
-    padding: rem(22) rem(66);
-    position: relative;
-    background: $white;
-    border-radius: 10px 10px 0 0 ;
-   
+  margin: rem(60) auto 0;
+  @include mq(md) {
+    max-width: 90%;
   }
-  .p-accordion__title::before{
-    content:"Q";
-    position: absolute;
-    top: rem(18);
-    left: rem(20);
-    font-weight: bold;
-    font-family: $font-family-base;
-    line-height: 1.33;
-    
-    color: $white;
-    padding: rem(5) rem(11) rem(6) rem(11);
-    border-radius: 50%;
-  }
-  .p-accordion__content {
-    display: none;
-    padding: rem(12) rem(22);
-    border-radius:0 0 10px 10px  ;
-  }
-  .p-accordion__content {
-    font-size: rem(16);
-    line-height: 1.5;
-    position: relative;
-    background: $white;
-    background: $light-blue;
-    color: $black;
-    font-weight: $bold;
-  }
-  // .p-accordion__content::before{
-  //   position: absolute;
-  //   content: "A";
-  //   top: rem(9);
-  //   left: rem(20);
-  //   font-weight: $bold;
-  //   font-family: $font-family-base;
-  //   line-height: 1.33;
-  //   padding: rem(5) rem(11) rem(6) rem(11);
-  //   border-radius: 50%;
-  //   background: $white;
-  //   color: blue;
-  // }
-.p-accordion__item{
-    margin-bottom: rem(30);
+  z-index: 2;
 }
- 
-  
-  
-  /* 矢印 */
-  .p-accordion__title {
-    position: relative;
-   background: $green;
-    color: $white;
-    font-weight: $bold;
-  }
-  .p-accordion__title::after {
-    border-right: solid rem(3) $white;
-    border-top: solid rem(3) $white;
-    content: "";
-    display: block;
-    height:rem(16);
-    position: absolute;
-    right: 25px;
-    top: 28%;
-    transform: rotate(135deg);
-    transition: transform .3s ease-in-out, top .3s ease-in-out;
-    width:rem(16);
-  }
-  .p-accordion__title.open::after {
-    top: 45%;
-    transform: rotate(-45deg);
-  }
-  
-  .p-accordion__item:first-of-type .p-accordion__content{
-    display: block;
-  }
+.p-accordion__title {
+  color: $black;
+  cursor: pointer;
+  font-size: rem(16);
+  font-weight: bold;
+  padding: rem(22) rem(66);
+  position: relative;
+  background: $white;
+  border-radius: 10px 10px 0 0;
+}
+.p-accordion__title::before {
+  content: "Q";
+  position: absolute;
+  top: rem(18);
+  left: rem(20);
+  font-weight: bold;
+  font-family: $font-family-base;
+  line-height: 1.33;
 
+  color: $white;
+  padding: rem(5) rem(11) rem(6) rem(11);
+  border-radius: 50%;
+}
+.p-accordion__content {
+  display: none;
+  padding: rem(12) rem(22);
+  border-radius: 0 0 10px 10px;
+}
+.p-accordion__content {
+  font-size: rem(16);
+  line-height: 1.5;
+  position: relative;
+  background: $white;
+  background: $light-blue;
+  color: $black;
+  font-weight: $bold;
+}
 
+.p-accordion__item {
+  margin-bottom: rem(30);
+}
 
+/* 矢印 */
+.p-accordion__title {
+  position: relative;
+  background: $green;
+  color: $white;
+  font-weight: $bold;
+}
+.p-accordion__title::after {
+  border-right: solid rem(3) $white;
+  border-top: solid rem(3) $white;
+  content: "";
+  display: block;
+  height: rem(16);
+  position: absolute;
+  right: 25px;
+  top: 28%;
+  transform: rotate(135deg);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  width: rem(16);
+}
+.p-accordion__title.open::after {
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
+.p-accordion__item:first-of-type .p-accordion__content {
+  display: block;
+}

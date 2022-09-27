@@ -1,4 +1,3 @@
-
 <?php
 $home = esc_url(home_url('/'));
 $about = esc_url(home_url('/#about'));
@@ -39,9 +38,9 @@ $contact = esc_url(home_url('/contact/'));
             </nav>
         </div>
         <div class="p-footer__copy-rights">
-           <p class="p-footer__copy-right">
-            ©︎ 2022 Web-Roots
-           </p> 
+            <p class="p-footer__copy-right">
+                ©︎ 2022 Web-Roots
+            </p>
         </div>
     </div>
 </footer>

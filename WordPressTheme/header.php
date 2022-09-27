@@ -37,7 +37,6 @@
       s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-
   <?php wp_head(); ?>
 </head>
 <?php
@@ -56,45 +55,45 @@ $contact = esc_url(home_url('/contact/'));
     <div class="p-header__inner">
       <div class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>"> <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-bk.svg" width="233" height="33" alt="ロゴ"> </a></div>
       <nav class="p-header__pc-nav">
-       <ul class="p-header__pc-nav-items">
+        <ul class="p-header__pc-nav-items">
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $about ?>">私について</a>
+            <a href="<?php echo $about ?>">私について</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $valuable ?>">大切にしていること</a>
+            <a href="<?php echo $valuable ?>">大切にしていること</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $works ?>">制作実績</a>
+            <a href="<?php echo $works ?>">制作実績</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $flow  ?>">制作の流れ</a>
+            <a href="<?php echo $flow  ?>">制作の流れ</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $qa ?>">よくある質問</a>
+            <a href="<?php echo $qa ?>">よくある質問</a>
           </li>
           <li class="p-header__pc-nav-item">
-              <a href="<?php echo $contact ?>" class="c-btn-contact">Contact</a>
+            <a href="<?php echo $contact ?>" class="c-btn-contact">Contact</a>
           </li>
-       </ul>  
-      </nav> 
-     </div>
-     <div class="hamburger-menus"></div>
-      <a class="hamburger-menu menu">
-        <span class="menu__line menu__line--top"></span>
-        <span class="menu__line menu__line--center"></span>
-        <span class="menu__line menu__line--bottom"></span>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger-menus"></div>
+    <a class="hamburger-menu menu">
+      <span class="menu__line menu__line--top"></span>
+      <span class="menu__line menu__line--center"></span>
+      <span class="menu__line menu__line--bottom"></span>
     </a>
     <nav class="gnav">
-        <div class="gnav__wrap">
-            <ul class="gnav__menu">
-                <li class="gnav__menu__item"><a href="<?php echo $about ?>">Web-Rootsについて</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $valuable ?>">大切にしていること</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $works ?>">制作実績</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $flow  ?>">制作の流れ</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $qa ?>">よくある質問</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $contact ?>">お問い合わせ</a></li>
-            </ul>
-        </div>
+      <div class="gnav__wrap">
+        <ul class="gnav__menu">
+          <li class="gnav__menu__item"><a href="<?php echo $about ?>">Web-Rootsについて</a></li>
+          <li class="gnav__menu__item"><a href="<?php echo $valuable ?>">大切にしていること</a></li>
+          <li class="gnav__menu__item"><a href="<?php echo $works ?>">制作実績</a></li>
+          <li class="gnav__menu__item"><a href="<?php echo $flow  ?>">制作の流れ</a></li>
+          <li class="gnav__menu__item"><a href="<?php echo $qa ?>">よくある質問</a></li>
+          <li class="gnav__menu__item"><a href="<?php echo $contact ?>">お問い合わせ</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="p-header_nav-background"></div>
- </header>
+  </header>

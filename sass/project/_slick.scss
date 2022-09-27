@@ -1,27 +1,23 @@
 @use "global" as *;
-  .container {
-    margin: 30px auto 0;
-    max-width: 1920px;
-    width: 100%;
-//     @include mq(md){
-//    max-width: 500px;
-//         }
+.container {
+  margin: 30px auto 0;
+  max-width: 1920px;
+  width: 100%;
+}
+.slick-img img {
+  height: auto;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: opacity 0.5s, transform 1s;
+  width: 100%;
+}
+.slider .slick-center img {
+  opacity: 1;
+  transform: scale(1);
+}
+.slick-dots {
+  bottom: -45px;
+  @include mq(md) {
+    bottom: -25px;
   }
-  .slick-img img {
-    height: auto;
-    opacity: .5;
-    transform: scale(.8);
-    transition: opacity .5s, transform 1s;
-    width: 100%;
-  }
-  .slider .slick-center img {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .slick-dots{
-      bottom: -45px ;
-      @include mq(md){
-          bottom: -25px;
-          
-          }
-  }
+}

@@ -12,7 +12,7 @@
                         Contact
                 </h2>
                 <div class="p-page-contact-text__texts">
-                        
+
                         <p class="p-page-contact-texts__text">
                                 制作の依頼・ご相談などお気軽に<br class="is-md">お問い合わせくださいませ。
                         </p>
@@ -26,10 +26,9 @@
         </div>
         <div class="p-page-contact-forms">
                 <div class="p-page-contact-form">
-                         <?php echo do_shortcode('[contact-form-7 id="21" title="お問い合わせ"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="21" title="お問い合わせ"]'); ?>
+                </div>
 
-                 </div>
-                
         </div>
 </div>
 <?php get_footer(); ?>

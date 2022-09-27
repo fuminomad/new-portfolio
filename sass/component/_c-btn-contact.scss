@@ -1,18 +1,18 @@
 @use "global" as *;
-.c-btn-contact{
+.c-btn-contact {
     display: inline-block;
-    padding: rem(11)rem(10)rem(9)rem(36);
-    background-color:$black2;
+    padding: rem(11) rem(10) rem(9) rem(36);
+    background-color: $black2;
     color: $white;
     font-family: $font-family-english;
     text-decoration: none;
     position: relative;
     transition: all 0.5s;
     letter-spacing: 0;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: rem(15);
 }
-.c-btn-contact::before{
+.c-btn-contact::before {
     position: absolute;
     width: rem(16);
     height: rem(13);
@@ -20,8 +20,7 @@
     transform: translateY(-50%);
     left: rem(10);
     content: "";
-    background: url(../img/icon-mail-wt.svg)no-repeat center center / contain;
+    background: url(../img/icon-mail-wt.svg) no-repeat center center / contain;
     transition: all 0.5s;
     color: $white;
 }
-

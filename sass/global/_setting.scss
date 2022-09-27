@@ -12,13 +12,12 @@ $padding-pc: 40px;
 $padding-sp: 15px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
 
 $font-family-base: fot-tsukuardgothic-std, sans-serif;
-$font-family-english:  'Josefin Sans', sans-serif;
+$font-family-english: "Josefin Sans", sans-serif;
 
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
@@ -39,18 +38,17 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black:#333;
-$black2:#252525;
-$white:#fff;
-$blue:#C1D9EE;
-$light-blue:#DAE0E3;
-$beige:#F2EEE9;
-$brawn:#C2AA8B;
-$green:#264F63;
+$black: #333;
+$black2: #252525;
+$white: #fff;
+$blue: #c1d9ee;
+$light-blue: #dae0e3;
+$beige: #f2eee9;
+$brawn: #c2aa8b;
+$green: #264f63;
 
 // マウスホバー
 $opacity: 0.7; // 透過度
-
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -64,7 +62,6 @@ $breakpoints: (
   inner: strip-unit($inner),
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -87,7 +84,6 @@ $mediaquerys: (
   @return math.div($pixels, 16) * 1rem;
 }
 
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -107,16 +103,16 @@ $mediaquerys: (
   }
 }
 //スマホのみ表示
-.is-sm{
+.is-sm {
   display: none;
-  @include mq("sm"){
+  @include mq("sm") {
     display: block;
   }
 }
 //pcのみ表示
-.is-pc{
+.is-pc {
   display: block;
-  @include mq("md"){
+  @include mq("md") {
     display: none;
   }
 }
@@ -128,12 +124,11 @@ $mediaquerys: (
   }
 }
 // 改行コントロール
-.new-line{
+.new-line {
   display: inline-block;
 }
-.new-line-md{
-  @include mq(md){
+.new-line-md {
+  @include mq(md) {
     display: inline-block;
-    
-    }
+  }
 }
