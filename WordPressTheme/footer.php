@@ -6,15 +6,17 @@ $valuable = esc_url(home_url('/#valuable'));
 $works = esc_url(home_url('/#works'));
 $flow = esc_url(home_url('/#flow'));
 $qa = esc_url(home_url('/#qa'));
-$contact = esc_url(home_url('/#contact'));
+$contact = esc_url(home_url('/contact/'));
 ?>
 <footer class="l-footer p-footer">
     <div class="p-footer__inner">
         <div class="p-footer__wrapper">
 
+            <div class="p-footer__logos">
 
-            <div class="p-footer__logo">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-wt.svg" alt="" loading="lazy" width="264" height="48">
+                <div class="p-footer__logo">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-wt.svg" alt="" loading="lazy" width="264" height="48">
+                </div>
             </div>
             <nav class="p-footer__pc-nav">
                 <ul class="p-footer__pc-nav-items">

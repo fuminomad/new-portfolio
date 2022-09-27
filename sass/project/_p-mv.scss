@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .p-mv{
-padding-top: rem(44);
-padding-bottom: rem(116);
+// padding-top: rem(44);
+padding-bottom: rem(100);
 position: relative;
 @include mq(md){
     padding-bottom: rem(80);
@@ -15,8 +15,8 @@ padding-bottom: rem(40);
 .p-mv::after{
 position: absolute;
 width: 59.84%;
-height: 54%;
-top: 46%;
+height: 63%;
+top: 37%;
 left: 0;
 content: "";
 background-color: $light-blue;
@@ -68,7 +68,7 @@ overflow: hidden;
     position: absolute;
     width:100%;
     height: auto;
-    top: 55%;
+    top: 42%;
     left: 6%;
     content: "";
     z-index: 2;
@@ -79,7 +79,7 @@ overflow: hidden;
     }
 .p-mv__title{
     height: auto;
-    width: 37.08%;
+    width: 35.9%;
     @media screen and (max-width: 414px){
         width: 90.9%;
       }

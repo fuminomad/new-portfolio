@@ -1,12 +1,13 @@
 @use "global" as *;
 .p-about{
-padding-top: rem(80);
-padding-bottom: rem(80);    
-
-padding-left:  $padding-pc;
-padding-right: $padding-pc;
-position: relative;
-@include mq(md){
+  
+    padding-bottom: rem(120);    
+    padding-top: rem(80);
+    padding-left:  $padding-pc;
+    padding-right: $padding-pc;
+    position: relative;
+    @include mq(md){
+    padding-bottom: rem(80);    
     padding-left:  $padding-sp;
     padding-right: $padding-sp;
     }
@@ -33,6 +34,7 @@ padding-top: rem(72);
 @include mq(md){
     flex-direction: column;
     margin: 0 auto;
+    max-width: rem(600);
 }
 }
 .p-about__title{
@@ -83,7 +85,7 @@ padding-top: rem(22);
 margin-left: rem(60);
 @include mq(md){
     width: 100%;
-    margin-left: 0;
+   margin: 0 auto; 
     }
 }
 .p-about__figure{

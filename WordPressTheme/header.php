@@ -47,7 +47,7 @@ $valuable = esc_url(home_url('/#valuable'));
 $works = esc_url(home_url('/#works'));
 $flow = esc_url(home_url('/#flow'));
 $qa = esc_url(home_url('/#qa'));
-$contact = esc_url(home_url('/#contact'));
+$contact = esc_url(home_url('/contact/'));
 ?>
 
 <body <?php body_class(); ?>>
@@ -92,7 +92,7 @@ $contact = esc_url(home_url('/#contact'));
                 <li class="gnav__menu__item"><a href="<?php echo $works ?>">制作実績</a></li>
                 <li class="gnav__menu__item"><a href="<?php echo $flow  ?>">制作の流れ</a></li>
                 <li class="gnav__menu__item"><a href="<?php echo $qa ?>">よくある質問</a></li>
-                <li class="gnav__menu__item"><a href="<?php echo $qa ?>">お問い合わせ</a></li>
+                <li class="gnav__menu__item"><a href="<?php echo $contact ?>">お問い合わせ</a></li>
             </ul>
         </div>
     </nav>

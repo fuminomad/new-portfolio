@@ -94,7 +94,7 @@
                     <div class="p-valuable__text">
                         <h3 class="p-valuable__text-top">Coding</h3>
                         <p class="p-valuable__text-middle">コーディングにも対応</p>
-                        <p class="p-valuable__text-bottom">案件によりコーディング、wordpressにも対応しております。お気軽にご相談下さい。</p>
+                        <p class="p-valuable__text-bottom">コーディング、wordpressにも対応しております。お気軽にご相談下さい。</p>
                     </div>
                 </div>
             </div>
@@ -368,14 +368,15 @@
 <div class="p-contact">
     <div class="p-contact__inner">
         <div class="p-contact__text-wrapper">
-            <div class="p-contact__titles">
-                <h2 class="p-contact__title" id="contact">Contact</h2>
-            </div>
+            
+                <h2 class="p-contact__title" >Contact</h2>
+            
             <p class="p-contact__text">
                 <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span>
             </p>
         </div>
-        <a href="" class="p-contact__messages">
+        <a href="<?php echo home_url("/contact/"); ?> 
+" class="p-contact__messages">
             <p class="p-contact__message">
                 <span class="new-line">ご質問・ご相談はお問い合わせ</span> <span class="new-line">フォーム</span><span class="new-line">からお送りください。</span>
                 <br>3営業日以内にご返信致します。

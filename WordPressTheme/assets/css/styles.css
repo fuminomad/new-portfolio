@@ -342,17 +342,36 @@ select {
   }
 }
 
+.p-footer__logos {
+  max-width: 264px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .p-footer__logos {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
 .p-footer__logo {
-  width: 264px;
-  width: 16.5rem;
-  height: 48px;
-  height: 3rem;
+  height: auto;
+  padding-top: 18.1%;
+  position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .p-footer__logo {
     margin: 0 auto;
     margin-bottom: 3.125rem;
   }
+}
+
+.p-footer__logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-footer__pc-nav-items {
@@ -425,18 +444,25 @@ select {
   padding: 0 2.8125rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  padding-top: 24px;
-  padding-top: 1.5rem;
+  padding-top: 17.5px;
+  padding-top: 1.09375rem;
 }
 @media screen and (max-width: 767px) {
   .p-header__inner {
-    padding: 1.5rem 1.875rem;
+    padding: 1.09375rem 1.875rem;
   }
 }
 
 .p-header-logo {
   width: 222px;
   height: 33px;
+  padding-top: 1.5px;
+  padding-top: 0.09375rem;
+}
+@media screen and (max-width: 767px) {
+  .p-header-logo {
+    width: 11.25rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -575,10 +601,102 @@ select {
   }
 }
 
+.p-page-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.p-page-contact-mv {
+  margin-left: auto;
+  width: 100vw;
+  height: 23.4375vw;
+}
+@media screen and (max-width: 414px) {
+  .p-page-contact-mv {
+    width: 100vw;
+    height: 90vw;
+  }
+}
+
+.p-page-contact-mv__image {
+  height: auto;
+  width: 100%;
+}
+
+.p-page-contact-texts {
+  width: 55.7%;
+  max-width: 1070px;
+  max-width: 66.875rem;
+  margin: -100px auto 0;
+  text-align: center;
+  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
+  border-radius: 0 100px 0 0;
+  background-color: #fff;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 22px rgba(0, 0, 0, .11);
+          box-shadow: 0px 0px 22px rgba(0, 0, 0, .11);
+}
+@media screen and (max-width: 767px) {
+  .p-page-contact-texts {
+    width: 80%;
+    max-width: 31.25rem;
+    margin-top: 6.25rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .p-page-contact-texts {
+    margin-top: -9.375rem;
+    width: 85%;
+  }
+}
+
+.p-page-contact-texts__title {
+  display: inline-block;
+}
+
+.p-page-contact-text__texts {
+  padding-top: 35px;
+  padding-top: 2.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .p-page-contact-text__texts {
+    font-size: 0.9375rem;
+  }
+}
+
+.p-page-contact-forms {
+  background: #DAE0E3;
+  width: 55.7%;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .p-page-contact-forms {
+    width: 80%;
+    max-width: 31.25rem;
+  }
+}
+
+.p-page-contact-form {
+  text-align: center;
+  max-width: 600px;
+  max-width: 37.5rem;
+  margin: 50px auto;
+  margin: 3.125rem auto;
+}
+
 .c-btn-contact-form {
   display: inline-block;
-  padding: 20px 133px 20px 177px;
-  padding: 1.25rem 8.3125rem 1.25rem 11.0625rem;
+  padding: 20px 118px 20px 178px;
+  padding: 1.25rem 7.375rem 1.25rem 11.125rem;
   background-color: #fff;
   color: #333;
   font-family: "Josefin Sans", sans-serif;
@@ -615,8 +733,8 @@ select {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 135px;
-  left: 8.4375rem;
+  left: 118px;
+  left: 7.375rem;
   content: "";
   background: url(../img/icon-mail.svg) no-repeat center center/contain;
   -webkit-transition: all 0.5s;
@@ -779,6 +897,7 @@ select {
 @media screen and (max-width: 767px) {
   .menu {
     display: block;
+    top: 23px;
   }
 }
 
@@ -939,16 +1058,17 @@ select {
 }
 
 .p-about {
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
   padding-top: 80px;
   padding-top: 5rem;
-  padding-bottom: 80px;
-  padding-bottom: 5rem;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
 }
 @media screen and (max-width: 767px) {
   .p-about {
+    padding-bottom: 5rem;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -988,6 +1108,7 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
+    max-width: 37.5rem;
   }
 }
 
@@ -1062,7 +1183,7 @@ select {
 @media screen and (max-width: 767px) {
   .p-about__img {
     width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1277,8 +1398,8 @@ select {
 }
 
 .p-flow {
-  padding: 100px 0 92px;
-  padding: 6.25rem 0 5.75rem;
+  padding: 100px 0 100px;
+  padding: 6.25rem 0 6.25rem;
   position: relative;
 }
 
@@ -1391,6 +1512,10 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.p-flow__card:last-child {
+  margin-bottom: 0;
 }
 
 .p-flow-images {
@@ -1570,10 +1695,8 @@ select {
 }
 
 .p-mv {
-  padding-top: 44px;
-  padding-top: 2.75rem;
-  padding-bottom: 116px;
-  padding-bottom: 7.25rem;
+  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -1590,8 +1713,8 @@ select {
 .p-mv::after {
   position: absolute;
   width: 59.84%;
-  height: 54%;
-  top: 46%;
+  height: 63%;
+  top: 37%;
   left: 0;
   content: "";
   background-color: #DAE0E3;
@@ -1646,7 +1769,7 @@ select {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 55%;
+  top: 42%;
   left: 6%;
   content: "";
   z-index: 2;
@@ -1660,7 +1783,7 @@ select {
 
 .p-mv__title {
   height: auto;
-  width: 37.08%;
+  width: 35.9%;
 }
 @media screen and (max-width: 414px) {
   .p-mv__title {
@@ -1731,8 +1854,8 @@ select {
   height: 100%;
   height: 900px;
   height: 56.25rem;
-  padding-top: 140px;
-  padding-top: 8.75rem;
+  padding-top: 120px;
+  padding-top: 7.5rem;
 }
 @media screen and (max-width: 405px) {
   .p-qa {
@@ -1890,12 +2013,193 @@ select {
   display: block;
 }
 
+/*ContactForm7のテーブル化レスポンシブ調整*/
+/*テーブルを親要素の幅いっぱいに伸ばす*/
+.table-res-form {
+  width: 100%;
+}
+
+/*一行ごとに上ボーダー*/
+.table-res-form tr {
+  border-top: 1px #DDD solid;
+}
+
+/*一番上の行だけボーダーなし*/
+.table-res-form tr:first-child {
+  border-top: none;
+}
+
+/*背景色つける*/
+/*thとtd内の余白指定*/
+.table-res-form th {
+  padding: 0.7em 0.3em 0 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .table-res-form th {
+    padding: 0 1.5em 0.5em;
+  }
+}
+
+.table-res-form .dropdown {
+  padding: 1em 0.3em 0 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .table-res-form .dropdown {
+    padding: 0 1.5em 0em 1.5em;
+  }
+}
+
+.table-res-form .contact-message {
+  padding: 0 0.3em 0 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .table-res-form .contact-message {
+    padding: 1.5em 1.5em 0em 1.5em;
+  }
+}
+
+.table-res-form td {
+  padding: 1em 1.5em 0 0;
+}
+@media screen and (max-width: 767px) {
+  .table-res-form td {
+    padding: 0 1.5em 0.5em;
+  }
+}
+
+.table-res-form td:last-child {
+  width: 100%;
+  text-align: left;
+}
+
+/*th（項目欄）は30%幅、テキストを右寄せ*/
+.table-res-form th {
+  width: 30%;
+  text-align: right;
+}
+
+/*「必須」部分のスタイリング*/
+.table-res-form .requied {
+  font-size: 0.8em;
+  color: #CC310F;
+  display: inline-block;
+  padding: 0.25em 0.1em 0.25em 0.1em;
+  border-radius: 2px;
+}
+
+/*ここから768px以下の指定*/
+@media only screen and (max-width: 768px) {
+  /*thとtdをブロック化して幅100％にして、縦積み*/
+  .table-res-form th, .table-res-form td {
+    width: 100%;
+    display: block;
+  }
+
+  /*th（項目名）欄の不要な余白削除・テキスト左寄せ*/
+  .table-res-form th {
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  /*不要な最終行の左のthを非表示にする*/
+  .table-res-form .empty {
+    display: none;
+    width: 0% !important;
+  }
+}
+/*ここまで768px以下の指定---終わり*/
+/*ここから入力欄のスタイル指定*/
+/*各入力フォームスタイリング*/
+.table-res-form input[type=text], input[type=email], input[type=tel], textarea {
+  border: 1px #DAE0E3 solid;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  width: 90%;
+  background: #fff;
+  max-width: 600px;
+  max-width: 37.5rem;
+}
+@media screen and (max-width: 767px) {
+  .table-res-form input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 150px;
+  min-height: 9.375rem;
+}
+@media screen and (max-width: 767px) {
+  textarea {
+    min-height: 6.25rem;
+  }
+}
+
+/*入力欄にフォーカスしたら変化*/
+.table-res-form input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background: #fff;
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+          box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+}
+
+/*送信ボタンスタイリング*/
+.c-btn-contact--send input[type=submit] {
+  border: 1px #252525 solid;
+  padding: 0.5em 4em;
+  border-radius: 5px;
+  background: #252525;
+  color: #fff;
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+          box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+  font-weight: bold;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+/*送信ボタン・マウスオーバー時スタイリング*/
+.c-btn-contact--send input[type=submit]:hover {
+  background: #fff;
+  color: #252525;
+  border: 1px #252525 solid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+select {
+  background-color: #fff;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .wpcf7-spinner::before {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wpcf7-spinner {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .submit-btn {
+    text-align: center;
+  }
+}
+
 .p-valuable {
   width: 100%;
   max-width: 1920px;
   max-width: 120rem;
-  padding: 120px 0 100px;
-  padding: 7.5rem 0 6.25rem;
+  padding: 120px 0 0;
+  padding: 7.5rem 0 0;
 }
 @media screen and (max-width: 767px) {
   .p-valuable {
@@ -1912,8 +2216,8 @@ select {
 }
 
 .p-valuable__cards {
-  margin: 123px auto 0;
-  margin: 7.6875rem auto 0;
+  margin: 70px auto 0;
+  margin: 4.375rem auto 0;
 }
 
 .card {
@@ -2115,6 +2419,10 @@ select {
   border-radius: 100px 0px 0px 0px;
   padding-right: 12.2%;
   padding-left: 16.4%;
+  padding-right: 67px;
+  padding-right: 4.1875rem;
+  padding-left: 93px;
+  padding-left: 5.8125rem;
   padding-bottom: 51px;
   padding-bottom: 3.1875rem;
   max-height: 300px;
@@ -2203,8 +2511,8 @@ select {
   padding: 100px 0 100px;
   padding: 6.25rem 0 6.25rem;
   position: relative;
-  margin-bottom: 130px;
-  margin-bottom: 8.125rem;
+  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 @media screen and (max-width: 767px) {
   .p-works {
@@ -2305,8 +2613,8 @@ select {
   margin-left: 76%;
   display: inline-block;
   position: relative;
-  margin-top: 150px;
-  margin-top: 9.375rem;
+  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 @media screen and (max-width: 1023px) {
   .p-works__sub-title-3 {

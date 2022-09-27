@@ -2,7 +2,7 @@
 .p-works{
 padding: rem(100) 0 rem(100);
 position: relative;
-margin-bottom: rem(130);
+margin-bottom: rem(100);
 @include mq(md){
   margin-bottom: rem(100);
     padding: rem(100) 0 rem(80);
@@ -88,7 +88,7 @@ color: $black;
      margin-left: 76%;
     display: inline-block;
     position: relative;
-    margin-top: rem(150);
+    margin-top: rem(70);
     @include mq(lg){
         margin-left:73%;
         }

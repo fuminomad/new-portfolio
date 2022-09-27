@@ -2,7 +2,8 @@
 
 .c-btn-contact-form{
     display: inline-block;
-    padding: rem(20)rem(133)rem(20)rem(177);
+    padding: rem(20)rem(118)rem(20)rem(178);
+
     background-color:$white;
     color: $black;
     font-family: $font-family-english;
@@ -29,7 +30,7 @@
     height: rem(22);
     top: 50%;
     transform: translateY(-50%);
-    left: rem(135);
+    left: rem(118);
     content: "";
     background: url(../img/icon-mail.svg)no-repeat center center / contain;
     transition: all 0.5s;
