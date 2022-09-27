@@ -8,20 +8,14 @@
                 </figure>
             </h1>
         </div>
-
         <div class="p-mv__pictures">
             <picture class="p-mv__picture">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/mv.jpg" alt="デザイナーの画像" media="(min-width: 415px)" /><!-- 幅376px以上なら表示 -->
-
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-sp.jpg" alt="デザイナーの画像">
                 <picture>
-
         </div>
-
     </div>
 </div>
-
-
 <div class="p-about l-about">
     <h2 class="c-section-title p-about__title" id="about">About</h2>
     <div class="p-about__inner">
@@ -58,7 +52,7 @@
             <div class="p-valuable__card card">
                 <div class="card__img">
                     <figure class="card__figure">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/design.jpg" alt="ユーザー目線でデザイン" loading="lazy" width="960" height="412">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-1.png" alt="ユーザー目線でデザイン" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
                 <div class="p-valuable__texts">
@@ -72,7 +66,7 @@
             <div class="p-valuable__card card">
                 <div class="card__img">
                     <figure class="card__figure">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/communication.jpg" alt="コミュニケーションを大切に" loading="lazy" width="960" height="412">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-2.png" alt="コミュニケーションを大切に" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
                 <div class="p-valuable__texts">
@@ -87,7 +81,7 @@
             <div class="p-valuable__card card">
                 <div class="card__img">
                     <figure class="card__figure">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/coding.jpg" alt="コーディングにも対応" loading="lazy" width="960" height="412">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-3.png" alt="コーディングにも対応" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
                 <div class="p-valuable__texts">
@@ -111,11 +105,11 @@
                     <div class="wd-card__btn">
                         <!-- ここからsite-1 -->
                         <div class="js-open-modal p-modal__button" data-target=".js-modal">
-                    <div class="wd-card__img">
-                        <figure class="wd-card__figure">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-1.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
-                        </figure>
-                    </div>
+                            <div class="wd-card__img">
+                                <figure class="wd-card__figure">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-1.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
+                                </figure>
+                            </div>
                             <div class="wd-card__btn">
                                 <div class="c-btn">View More</div>
                             </div>
@@ -141,11 +135,11 @@
                     <div class="wd-card__btn">
                         <!-- ここからsite-2 -->
                         <div class="js-open-modal-2 p-modal__button" data-target=".js-modal-2">
-                    <div class="wd-card__img">
-                        <figure class="wd-card__figure">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-2.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
-                        </figure>
-                    </div>
+                            <div class="wd-card__img">
+                                <figure class="wd-card__figure">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/web-2.jpg" alt="webデザイン" loading="lazy" width="657" height="490">
+                                </figure>
+                            </div>
                             <div class="wd-card__btn">
                                 <div class="c-btn">View More</div>
                             </div>
@@ -214,7 +208,7 @@
                         <div class="c-btn">View Site</div>
                     </div>
                 </a>
-                <a href="//sumiya-mariko-ballet.com/"  class="cd-card">
+                <a href="//sumiya-mariko-ballet.com/" class="cd-card">
                     <div class="cd-card__img">
                         <figure class="cd-card__figure">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/coding-2.jpg" alt="コーディング" loading="lazy" width="657" height="490">
@@ -368,9 +362,9 @@
 <div class="p-contact">
     <div class="p-contact__inner">
         <div class="p-contact__text-wrapper">
-            
-                <h2 class="p-contact__title" >Contact</h2>
-            
+
+            <h2 class="p-contact__title">Contact</h2>
+
             <p class="p-contact__text">
                 <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span>
             </p>

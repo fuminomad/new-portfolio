@@ -609,6 +609,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .p-page-contact-mv {
@@ -673,7 +675,7 @@ select {
 }
 
 .p-page-contact-forms {
-  background: #DAE0E3;
+  background: #dae0e3;
   width: 55.7%;
   max-width: 1070px;
   margin: 0 auto;
@@ -790,7 +792,7 @@ select {
   display: inline-block;
   padding: 10px 7px 9px 19px;
   padding: 0.625rem 0.4375rem 0.5625rem 1.1875rem;
-  background: #DAE0E3;
+  background: #dae0e3;
   color: #333;
   font-family: fot-tsukuardgothic-std, sans-serif;
   text-decoration: none;
@@ -1081,7 +1083,7 @@ select {
   top: 0;
   left: 0;
   content: "";
-  background-color: #DAE0E3;
+  background-color: #dae0e3;
   z-index: -2;
 }
 @media screen and (max-width: 767px) {
@@ -1235,23 +1237,24 @@ select {
 }
 
 .p-contact {
-  padding-top: 80px;
-  padding-top: 5rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 200px;
-  margin-bottom: 12.5rem;
+  margin-bottom: 150px;
+  margin-bottom: 9.375rem;
 }
 @media screen and (max-width: 767px) {
   .p-contact {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 2.5rem;
     margin-bottom: 25rem;
   }
 }
 @media screen and (max-width: 767px) {
   .p-contact {
-    margin-bottom: 31.25rem;
+    margin-bottom: 26.25rem;
   }
 }
 
@@ -1271,7 +1274,7 @@ select {
 .p-contact__text-wrapper {
   padding: 110px 90px 150px;
   padding: 6.875rem 5.625rem 9.375rem;
-  background: #F2EEE9;
+  background: #f2eee9;
   text-align: center;
   border-radius: 0px 50px 0px 0px;
   width: 43%;
@@ -1410,7 +1413,7 @@ select {
   top: 0;
   left: 0;
   content: "";
-  background: #F2EEE9;
+  background: #f2eee9;
   z-index: -1;
   border-radius: 0px 100px 0px 0px;
 }
@@ -1717,7 +1720,7 @@ select {
   top: 37%;
   left: 0;
   content: "";
-  background-color: #DAE0E3;
+  background-color: #dae0e3;
   z-index: -2;
 }
 @media screen and (max-width: 767px) {
@@ -1963,7 +1966,7 @@ select {
   line-height: 1.5;
   position: relative;
   background: #fff;
-  background: #DAE0E3;
+  background: #dae0e3;
   color: #333;
   font-weight: 700;
 }
@@ -1976,7 +1979,7 @@ select {
 /* 矢印 */
 .p-accordion__title {
   position: relative;
-  background: #264F63;
+  background: #264f63;
   color: #fff;
   font-weight: 700;
 }
@@ -2021,7 +2024,7 @@ select {
 
 /*一行ごとに上ボーダー*/
 .table-res-form tr {
-  border-top: 1px #DDD solid;
+  border-top: 1px #ddd solid;
 }
 
 /*一番上の行だけボーダーなし*/
@@ -2081,7 +2084,7 @@ select {
 /*「必須」部分のスタイリング*/
 .table-res-form .requied {
   font-size: 0.8em;
-  color: #CC310F;
+  color: #cc310f;
   display: inline-block;
   padding: 0.25em 0.1em 0.25em 0.1em;
   border-radius: 2px;
@@ -2090,7 +2093,8 @@ select {
 /*ここから768px以下の指定*/
 @media only screen and (max-width: 768px) {
   /*thとtdをブロック化して幅100％にして、縦積み*/
-  .table-res-form th, .table-res-form td {
+  .table-res-form th,
+.table-res-form td {
     width: 100%;
     display: block;
   }
@@ -2110,8 +2114,11 @@ select {
 /*ここまで768px以下の指定---終わり*/
 /*ここから入力欄のスタイル指定*/
 /*各入力フォームスタイリング*/
-.table-res-form input[type=text], input[type=email], input[type=tel], textarea {
-  border: 1px #DAE0E3 solid;
+.table-res-form input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  border: 1px #dae0e3 solid;
   padding: 0.5em;
   border-radius: 5px;
   margin-bottom: 0.5em;
@@ -2121,7 +2128,10 @@ select {
   max-width: 37.5rem;
 }
 @media screen and (max-width: 767px) {
-  .table-res-form input[type=text], input[type=email], input[type=tel], textarea {
+  .table-res-form input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
     width: 100%;
   }
 }
@@ -2137,7 +2147,9 @@ textarea {
 }
 
 /*入力欄にフォーカスしたら変化*/
-.table-res-form input[type=text]:focus, input[type=email]:focus, textarea:focus {
+.table-res-form input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
   background: #fff;
   -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
           box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
@@ -2174,6 +2186,7 @@ textarea {
 select {
   background-color: #fff;
   padding-left: 10px;
+  color: #333;
 }
 
 @media screen and (max-width: 1023px) {
@@ -2272,6 +2285,9 @@ select {
 .card__img {
   width: 50%;
   height: auto;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="22" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.11)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, .11));
+          filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, .11));
 }
 @media screen and (max-width: 767px) {
   .card__img {
@@ -2321,7 +2337,7 @@ select {
   top: 7%;
   right: 5%;
   content: "";
-  background: url(../img/valuable-1.png) no-repeat center center/contain;
+  background: url(../img/v-1.png) no-repeat center center/contain;
 }
 @media screen and (max-width: 767px) {
   .p-valuable__texts::after {
@@ -2339,7 +2355,7 @@ select {
   top: 7%;
   right: 5%;
   content: "";
-  background: url(../img/valuable-3.png) no-repeat center center/contain;
+  background: url(../img/v-3.png) no-repeat center center/contain;
 }
 @media screen and (max-width: 767px) {
   .card:nth-child(3) .p-valuable__texts::after {
@@ -2357,7 +2373,7 @@ select {
   top: 7%;
   left: -18%;
   content: "";
-  background: url(../img/valuable-2.png) no-repeat center center/contain;
+  background: url(../img/v-2.png) no-repeat center center/contain;
 }
 @media screen and (max-width: 767px) {
   .card:nth-child(2) .p-valuable__texts::after {
@@ -2369,7 +2385,7 @@ select {
 }
 
 .p-valuable__text {
-  background: #F2EEE9;
+  background: #f2eee9;
   max-width: 806px;
   max-width: 50.375rem;
   width: 100%;
@@ -2384,6 +2400,7 @@ select {
   top: 40px;
   top: 2.5rem;
   border-radius: 0px 100px 0px 0px;
+  z-index: -1;
 }
 @media screen and (min-width: 1440px) {
   .p-valuable__text {
@@ -2419,10 +2436,6 @@ select {
   border-radius: 100px 0px 0px 0px;
   padding-right: 12.2%;
   padding-left: 16.4%;
-  padding-right: 67px;
-  padding-right: 4.1875rem;
-  padding-left: 93px;
-  padding-left: 5.8125rem;
   padding-bottom: 51px;
   padding-bottom: 3.1875rem;
   max-height: 300px;
@@ -2453,7 +2466,7 @@ select {
   font-size: 2.25rem;
   font-weight: 700;
   text-align: left;
-  color: #C2AA8B;
+  color: #c2aa8b;
 }
 @media screen and (max-width: 767px) {
   .p-valuable__text-top {
@@ -2522,7 +2535,7 @@ select {
 }
 
 .p-works::after {
-  background: #DAE0E3;
+  background: #dae0e3;
   position: absolute;
   width: 93%;
   height: 100%;
@@ -2586,7 +2599,7 @@ select {
           transform: translateY(-50%);
   left: 105%;
   content: "";
-  background: #264F63;
+  background: #264f63;
   overflow: hidden;
 }
 
@@ -2605,7 +2618,7 @@ select {
           transform: translateY(-50%);
   right: 105%;
   content: "";
-  background: #264F63;
+  background: #264f63;
   overflow: hidden;
 }
 
@@ -2642,7 +2655,7 @@ select {
           transform: translateY(-50%);
   left: 105%;
   content: "";
-  background: #264F63;
+  background: #264f63;
   overflow: hidden;
 }
 
