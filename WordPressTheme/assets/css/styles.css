@@ -2011,7 +2011,6 @@ select {
   border-top: none;
 }
 
-/*背景色つける*/
 /*thとtd内の余白指定*/
 .table-res-form th {
   padding: 0.7em 0.3em 0 1.5em;
