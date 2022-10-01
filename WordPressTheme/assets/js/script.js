@@ -90,6 +90,7 @@ jQuery('.p-header_hamburger , .p-header_nav-background' ).on('click' , function(
 
 			$(function() {
 				$('.slider').slick({
+				  autoplaySpeed: 2000,	
 				  autoplay: true, // 自動再生ON
 				  dots: true, // ドットインジケーターON
 				  centerMode: true, // 両サイドに前後のスライド表示

@@ -20,7 +20,10 @@
     }
 }
 .c-btn-contact-form:hover {
-    opacity: 0.7;
+    
+    color: $white;
+    background-color: $black2;
+    opacity: .8;
 }
 .c-btn-contact-form::before {
     position: absolute;
@@ -39,5 +42,5 @@
     }
 }
 .c-btn-contact-form:hover::before {
-    opacity: 0.7;
+    background: url(../img/icon-mail-wt.svg) no-repeat center center / contain;
 }

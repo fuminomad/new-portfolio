@@ -91,30 +91,30 @@
         padding-bottom: rem(50);
     }
 }
-.p-contact__messages:hover .c-btn-contact-form {
-    opacity: 0.5;
-}
-.p-contact__messages::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    content: "";
-    background: rgba(0, 0, 0, 0.21);
-    z-index: -1;
-    transition: all 0.5s;
-}
-.p-contact__messages:hover::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
-    transition: all 0.5s;
-}
+// .p-contact__messages:hover .c-btn-contact-form {
+//     opacity: 0.5;
+// }
+// .p-contact__messages::after {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     content: "";
+//     background: rgba(0, 0, 0, 0.21);
+//     z-index: -1;
+//     transition: all 0.5s;
+// }
+// .p-contact__messages:hover::after {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     content: "";
+//     background: rgba(0, 0, 0, 0.7);
+//     transition: all 0.5s;
+// }
 .p-contact__message {
     display: inline-block;
     margin-bottom: rem(36);

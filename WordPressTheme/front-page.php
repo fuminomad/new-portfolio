@@ -55,13 +55,13 @@
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-1.png" alt="ユーザー目線でデザイン" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
-                <div class="p-valuable__texts">
-                    <div class="p-valuable__text">
-                        <h3 class="p-valuable__text-top">Design</h3>
-                        <p class="p-valuable__text-middle">ユーザー目線でデザイン</p>
-                        <p class="p-valuable__text-bottom">直感的で使いやすいサイトにするために、どうしたらクリックしたくなるのかを考えながら、デザインをしております。</p>
-                    </div>
+
+                <div class="p-valuable__text">
+                    <h3 class="p-valuable__text-top">Design</h3>
+                    <p class="p-valuable__text-middle">ユーザー目線でデザイン</p>
+                    <p class="p-valuable__text-bottom">直感的で使いやすいサイトにするために、どうしたらクリックしたくなるのかを考えながら、デザインをしております。</p>
                 </div>
+
             </div>
             <div class="p-valuable__card card">
                 <div class="card__img">
@@ -69,14 +69,13 @@
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-2.png" alt="コミュニケーションを大切に" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
-                <div class="p-valuable__texts">
-                    <div class="p-valuable__text">
-                        <h3 class="p-valuable__text-top">Communication</h3>
-                        <p class="p-valuable__text-middle">コミュニケーションを大切に</p>
-                        <p class="p-valuable__text-bottom">仕事がしやすい。お願いしやすい。<br>
-                            そんなパートナーになることを目指しております。<br>だからこそ、連絡はこまめにし、コミュニケーションを大切にしております。</p>
-                    </div>
+
+                <div class="p-valuable__text">
+                    <h3 class="p-valuable__text-top">Communication</h3>
+                    <p class="p-valuable__text-middle">コミュニケーションを大切に</p>
+                    <p class="p-valuable__text-bottom">相手に配慮したコミュニケーションを大切にして仕事がしやすいパートナーになることをお約束いたします。</p>
                 </div>
+
             </div>
             <div class="p-valuable__card card">
                 <div class="card__img">
@@ -84,13 +83,13 @@
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/valuable-3.png" alt="コーディングにも対応" loading="lazy" width="960" height="412">
                     </figure>
                 </div>
-                <div class="p-valuable__texts">
-                    <div class="p-valuable__text">
-                        <h3 class="p-valuable__text-top">Coding</h3>
-                        <p class="p-valuable__text-middle">コーディングにも対応</p>
-                        <p class="p-valuable__text-bottom">コーディング、wordpressにも対応しております。お気軽にご相談下さい。</p>
-                    </div>
+
+                <div class="p-valuable__text">
+                    <h3 class="p-valuable__text-top">Coding</h3>
+                    <p class="p-valuable__text-middle">コーディングにも対応</p>
+                    <p class="p-valuable__text-bottom">コーディング、wordpressにも対応しております。お気軽にご相談下さい。</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -333,7 +332,7 @@
                 </div>
             </div>
             <div class="p-accordion__item">
-                <div class="p-accordion__title js-accordion-title open">
+                <div class="p-accordion__title js-accordion-title">
                     バナーのみお願いしたいのですが、可能ですか？
                 </div>
                 <div class="p-accordion__content">
@@ -341,7 +340,7 @@
                 </div>
             </div>
             <div class="p-accordion__item">
-                <div class="p-accordion__title js-accordion-title open">
+                <div class="p-accordion__title js-accordion-title">
                     クライアントとの打ち合わせに同席してもらえますか？
                 </div>
                 <div class="p-accordion__content">
@@ -349,7 +348,7 @@
                 </div>
             </div>
             <div class="p-accordion__item">
-                <div class="p-accordion__title js-accordion-title open">
+                <div class="p-accordion__title js-accordion-title">
                     お見積もりだけでも大丈夫でしょうか？
                 </div>
                 <div class="p-accordion__content">
@@ -369,16 +368,18 @@
                 <span class="new-line-md">制作のご依頼・ご相談などお気軽に</span><span class="new-line-md">お問い合わせくださいませ。</span>
             </p>
         </div>
-        <a href="<?php echo home_url("/contact/"); ?> 
-" class="p-contact__messages">
+
+        <div class="p-contact__messages">
             <p class="p-contact__message">
                 <span class="new-line">ご質問・ご相談はお問い合わせ</span> <span class="new-line">フォーム</span><span class="new-line">からお送りください。</span>
                 <br>3営業日以内にご返信致します。
             </p>
             <div class="p-contact__btn">
-                <div class="c-btn-contact-form">Contact Form</div>
+                <a class="c-btn-contact-form" href="<?php echo home_url("/contact/"); ?> ">Contact Form </a>
+
             </div>
-        </a>
+
+        </div>
     </div>
 </div>
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

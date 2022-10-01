@@ -10,6 +10,9 @@
   transform: translate(-50%, -50%);
   display: none;
   z-index: 501;
+  @include mq(sm){
+    width: 90%;
+    }
 }
 
 @media screen and (min-width: 765px) {
@@ -52,6 +55,7 @@
   width: 100%;
   @include mq(sm) {
     max-height: 500px;
+    padding: 0;
   }
 }
 .p-modal__box {

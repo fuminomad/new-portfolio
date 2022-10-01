@@ -1,7 +1,7 @@
 @use "global" as *;
 .c-btn-contact {
     display: inline-block;
-    padding: rem(11) rem(10) rem(9) rem(36);
+    padding: rem(13) rem(26) rem(11) rem(50);
     background-color: $black2;
     color: $white;
     font-family: $font-family-english;
@@ -18,7 +18,7 @@
     height: rem(13);
     top: 50%;
     transform: translateY(-50%);
-    left: rem(10);
+    left: rem(20);
     content: "";
     background: url(../img/icon-mail-wt.svg) no-repeat center center / contain;
     transition: all 0.5s;
